@@ -1,0 +1,48 @@
+/* Define CSS variables for primary and secondary colors */
+:root {
+    --primary-color: #343a40;  /* Dark grey */
+    --secondary-color: #ffffff; /* White */
+  }
+  
+  /* Navbar styling using the variables */
+  .custom-navbar {
+    background-color: var(--primary-color);  /* Dark grey background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Brand text styling */
+  .custom-navbar .brand-text {
+    color: var(--secondary-color);  /* White text */
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .custom-navbar .brand-text:hover {
+    color: #7d9bbc;  /* Blue hover effect */
+    text-decoration: none;
+  }
+  
+  /* Navbar link styles */
+  .custom-navbar .nav-link-item {
+    color: var(--secondary-color);  /* White links */
+    font-weight: 500;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link-item:hover {
+    color: #007bff;  /* Blue on hover */
+    text-decoration: none;
+  }
+  
+  /* Mobile navbar toggle button */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: none;
+    color: var(--secondary-color);  /* White toggle icon */
+  }
+  

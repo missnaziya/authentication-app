@@ -1,0 +1,50 @@
+/* Global CSS Variables */
+:root {
+  --primary-color: #343a40;  /* Dark grey for primary elements */
+  --secondary-color: #ffffff; /* White for secondary elements */
+  --accent-color: #88afd8;    /* Blue for accents and hover effects */
+}
+
+/* Basic body styles */
+body {
+  overflow: hidden;  /* Prevent vertical scrolling */
+  margin: 0;        /* Remove default margin */
+  font-family: Arial, sans-serif;  /* Set a global font */
+}
+
+/* Hide input number increment/decrement buttons */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Button styles */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-color); /* Change background color on hover */
+  color: var(--secondary-color); /* Keep text color white */
+}
+
+/* Navbar styles (optional, if you want to ensure navbar styles are applied globally) */
+.custom-navbar {
+  background-color: var(--primary-color);
+}
+
+.custom-navbar .brand-text,
+.custom-navbar .nav-link-item {
+  color: var(--secondary-color);
+}
+
+/* Other global styles can be added here */
